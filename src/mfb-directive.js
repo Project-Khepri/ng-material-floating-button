@@ -50,12 +50,12 @@
     );
 
     $templateCache.put('ng-mfb-button-md.tpl.html',
-      '<li>' +
+      '<li  class="mfb-component--{{position}} mfb-{{effect}}>' +
       '  <a href="" data-mfb-label="{{label}}" class="mfb-component__button--child" ' +
       '     style="background: transparent; box-shadow: none;">' +
       '     <md-button style="margin: 0;" class="md-fab md-primary" aria-label={{label}}>' +
       //'       <md-icon md-svg-src="img/icons/android.svg"></md-icon>' +
-      '       <md-icon md-svg-icon="{{icon}}"></md-icon>' +
+      '			<md-icon class="material-icons.md-36" md-font-icon="{{active}}"></md-icon>' +
       '     </md-button>' +
       '  </a>' +
       '</li>'
